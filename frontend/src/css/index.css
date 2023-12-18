@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container {
+  @apply m-auto mt-10 max-w-lg;
+}
+
+h1 {
+  @apply text-center mb-8 font-bold;
+}
+
+form {
+  @apply flex flex-col gap-5;
+}
+
+label {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+input {
+  border: 1px solid rgb(215, 228, 240);
+  border-radius: 30px;
+  @apply px-2;
+}
+
+
+.icon {
+  background-color: rgb(250, 6, 6);
+  color: white;
+  border-radius: 100%;
+  font-size: 0.7em;
+  padding: 3px 5px;
+}

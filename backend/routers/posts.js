@@ -2,7 +2,13 @@ const express = require("express");
 const multer = require("multer");
 const router = express.Router();
 const postController = require("../controllers/posts");
+// const { authenticateWithJWT } = require("../middlewares/jwtToken");
 
+// router.use(authenticateWithJWT);
+
+// router.get("/", (req, res) => {
+// res.send("Rotta privata");
+// });
 
 router.get("/", postController.index);
 
